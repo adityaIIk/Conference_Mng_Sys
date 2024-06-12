@@ -1,0 +1,111 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global styles */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif; /* Use Montserrat font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header styles */
+.navbar-nav {
+  margin-left: auto !important;
+}
+
+/* Image styles */
+.smallimg {
+  height: 200px;
+  width: 100%;
+}
+
+.bigimg {
+  height: 400px;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Button styles */
+.btn {
+  background-color: black;
+  color: white;
+  box-shadow: none;
+}
+
+/* Form input styles */
+input, select, .ant-picker {
+  box-shadow: none !important;
+  margin-top: 10px;
+  border: 2px solid black;
+  width: 100%;
+  border-radius: 3px;
+  height: 35px;
+}
+
+/* Card styles */
+.bs {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+/* Paragraph styles */
+p {
+  font-size: 15px;
+}
+
+/* Landing screen styles */
+.landing {
+  height: 100vh;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  /* Heading styles */
+  h1 {
+    font-size: 16px !important; /* Decrease font size for smaller screens */
+  }
+
+  h2 {
+    font-size: 60px !important; /* Decrease font size for smaller screens */
+  }
+
+  /* Button styles */
+  .btn {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+
+  /* Landing screen styles */
+  .landing {
+    height: auto; /* Remove fixed height for smaller screens */
+    padding: 20px; /* Add padding for smaller screens */
+    text-align: center; /* Center align text for smaller screens */
+  }
+
+  .landing h2 {
+    font-size: 20px; /* Decrease font size for smaller screens */
+  }
+
+  /* Ensure logo fits smaller screens */
+  .landing h2 span {
+    display: block;
+  }
+
+  /* Adjust other styles as needed for better mobile layout */
+}
