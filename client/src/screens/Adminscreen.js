@@ -180,7 +180,7 @@ export function Rooms() {
 export function Users() {
   const [users, setusers] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
+
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -190,7 +190,7 @@ export function Users() {
         setLoading(false);
       } catch (error) {
         console.error(error);
-        setError(true);
+    
         setLoading(false);
       }
     };
@@ -240,7 +240,7 @@ export function Users() {
 
 export function Addroom() {
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState();
+   
     const [name, setname] = useState('');
     const [rentperday, setrentperday] = useState('');
     const [maxcount, setmaxcount] = useState('');

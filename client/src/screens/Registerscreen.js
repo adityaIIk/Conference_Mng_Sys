@@ -46,6 +46,7 @@ function Registerscreen() {
             setLoading(false);
             setSuccess(true);
             clearForm();
+            console.log(result)
             // Redirect to login page
             window.location.href = '/login';
         } catch (error) {

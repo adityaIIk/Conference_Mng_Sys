@@ -4,7 +4,7 @@ import axios from "axios";
 import Loader from "../components/Loader";
 import Error from "../components/Error";
 import Swal from 'sweetalert2';
-import { Tag,Divider } from "antd";
+import { Tag } from "antd";
 
 const { TabPane } = Tabs;
 
@@ -98,7 +98,7 @@ export function MyBookings() {
                             <p><b>CheckIn Time:</b> {booking.starttime}</p>
                             <p><b>CheckOut Time: </b>{booking.endtime}</p>
                             <p><b>Amount:</b> ${booking.totalamount}</p>
-                            <p><b>Status: </b>{booking.status == 'cancelled' ? (<Tag color='red' >CANCELLED</Tag>) : (<Tag color='green'>CONFIRMED</Tag>) }</p>
+                            <p><b>Status: </b>{booking.status === 'cancelled' ? (<Tag color='red' >CANCELLED</Tag>) : (<Tag color='green'>CONFIRMED</Tag>) }</p>
                             {booking.status === 'booked' && (
                                 <div>
                                     <button className='btn btn-primary' onClick={() => cancelBooking(booking._id, booking.roomid)}>CANCEL BOOKING</button>
